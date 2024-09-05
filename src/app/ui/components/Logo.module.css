@@ -1,0 +1,7 @@
+.logo {
+  text-decoration: none;
+}
+
+.logo:hover {
+  background-color: var(--mantine-color-gray-light);
+}

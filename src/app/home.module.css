@@ -1,0 +1,25 @@
+.body {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow-y: scroll;
+}
+
+.app {
+  flex-grow: 1;
+  display: flex;
+  padding: 25px;
+}
+
+.body * {
+  transition: all 0.2s;
+}
+
+.notifications {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: fit-content;
+  height: fit-content;
+  z-index: 5000;
+}
