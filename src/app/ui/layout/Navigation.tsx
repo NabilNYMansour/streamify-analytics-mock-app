@@ -13,7 +13,6 @@ const Navigation = () => {
   return (
     <Flex h="100%" p={25} direction="column" gap={10}>
       <Logo />
-      {/* <Divider my="sm" w="100%" size="sm" /> */}
 
       <Button size='xl' justify='flex-start' component={Link} href="/"
         variant={currPath === '/' ? 'filled' : 'default'}

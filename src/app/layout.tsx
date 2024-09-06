@@ -1,7 +1,7 @@
 import React from "react";
 import "@mantine/core/styles.css";
-import '@mantine/charts/styles.css';
-import { MantineProvider, ColorSchemeScript } from "@mantine/core";
+// import '@mantine/charts/styles.css';
+import { MantineProvider, ColorSchemeScript, Flex } from "@mantine/core";
 import classes from "./home.module.css";
 import cx from 'clsx';
 import { theme } from "@/theme";
@@ -66,10 +66,12 @@ export default function RootLayout({
       </head>
       <body className={cx(classes.body, font.className)}>
         <MantineProvider defaultColorScheme="light" theme={theme}>
-          <Navigation />
-          <div className={classes.app}>
-            {children}
-          </div>
+          <Flex h="100vh">
+            <Navigation />
+            <div className={classes.app}>
+              {children}
+            </div>
+          </Flex>
         </MantineProvider>
       </body>
     </html>

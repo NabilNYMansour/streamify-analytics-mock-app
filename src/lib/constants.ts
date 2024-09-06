@@ -1,49 +1,50 @@
 export const MAIN_URL = "https://Offloadrx.ca"
 
+// Hardcoded values
+export const numberOfUsers = 10000
+export const activeUsers = 5000
+export const totalStreams = 80000
+export const revenue = 2500
 export const ActiveUsers = [
   {
-    date: 'Aug 22',
-    value: 10010,
-  },
-  {
     date: 'Aug 23',
-    value: 10532,
+    value: 3532,
   },
   {
     date: 'Aug 24',
-    value: 20040,
+    value: 5040,
 
   },
   {
     date: 'Aug 25',
-    value: 17055,
+    value: 7055,
   },
   {
     date: 'Aug 26',
-    value: 18090,
+    value: 4090,
   },
   {
     date: 'Sep 1',
-    value: 19020,
+    value: 3020,
   },
   {
     date: 'Sep 2',
-    value: 12540,
+    value: 2540,
   },
   {
     date: 'Sep 3',
-    value: 16030,
+    value: 6030,
   },
   {
     date: 'Sep 4',
-    value: 10560,
+    value: 2560,
   },
   {
     date: 'Sep 5',
-    value: 9580,
+    value: 3880,
   },
   {
     date: 'Sep 6',
-    value: 13010,
+    value: 3010,
   }
 ]

@@ -8,7 +8,7 @@ const TopArtistCardSkeleton = () => {
   return <Card withBorder p={25} miw={250}>
     <Title order={2} fw={500} ff="inherit">Top Artist</Title>
     <Text size="lg" c="dimmed">Last 30 days</Text>
-    <Skeleton h="100%" />
+    <Skeleton mt={30} h="100%" />
   </Card>
 }
 

@@ -11,15 +11,15 @@ const HomeCardSkeleton = () => {
   </Card>
 }
 
-const HomeCard = async ({ title, subtitle, value }:
-  { title: string, subtitle: string, value: number }) => {
-    
+const HomeCard = async ({ title, subtitle, value, suffix }:
+  { title: string, subtitle: string, value: number, suffix?: string }) => {
+
   return (
     <Card withBorder p={25} miw={250}>
       <Title order={2} fw={500} ff="inherit">{title}</Title>
       <Text size="lg" c="dimmed">{subtitle}</Text>
       <Text fz="h2" mt="xl">
-        <NumberFormatter thousandSeparator value={value} />
+        <NumberFormatter thousandSeparator value={value} suffix={suffix} />
       </Text>
     </Card>
   );

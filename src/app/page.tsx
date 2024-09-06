@@ -2,6 +2,7 @@ import { Flex, Title } from "@mantine/core";
 import ActiveUsersChart from "./ui/components/home/ActiveUsersChart";
 import HomeCard from "./ui/components/home/HomeCard";
 import TopArtistCard from "./ui/components/home/TopArtistCard";
+import { activeUsers, numberOfUsers, revenue, totalStreams } from "@/lib/constants";
 
 const gap = 15;
 
@@ -16,15 +17,13 @@ export default async function HomePage() {
         <Flex gap={gap} wrap="wrap" justify="center">
           <Flex gap={gap} direction="column" wrap="wrap">
             <Flex gap={gap} wrap="wrap" justify="center">
-              <HomeCard title="Total users" subtitle="All time" value={1000000} />
-
-              <HomeCard title="Active users" subtitle="Since September 2024" value={750000} />
+              <HomeCard title="Total users" subtitle="All time" value={numberOfUsers} />
+              <HomeCard title="Active users" subtitle="Since September 2024" value={activeUsers} />
             </Flex>
 
             <Flex gap={gap} wrap="wrap" justify="center">
-              <HomeCard title="Total streams" subtitle="Since September 2024" value={8000000} />
-
-              <HomeCard title="Revenue" subtitle="Since September 2024" value={200000} />
+              <HomeCard title="Total streams" subtitle="Since September 2024" value={totalStreams} />
+              <HomeCard title="Revenue" subtitle="Since September 2024" value={revenue} suffix=" CAD" />
             </Flex>
           </Flex>
 

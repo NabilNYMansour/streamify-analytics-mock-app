@@ -14,7 +14,7 @@ const ActiveUsersChartSkeleton = () => {
 }
 
 const ActiveUsersChart = async () => {
-  await new Promise((resolve) => setTimeout(resolve, 1000)); // simulate loading
+  await new Promise((resolve) => setTimeout(resolve, 1500)); // simulate loading
 
   return <Card withBorder p={25} miw={250}>
     <Title order={2} fw={500} ff="inherit" pb="xl">Active users</Title>
