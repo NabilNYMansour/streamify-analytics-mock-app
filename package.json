@@ -11,7 +11,7 @@
     "drizzle:migrate": "drizzle-kit migrate",
     "drizzle:studio": "drizzle-kit studio",
     "drizzle:seed": "node ./scripts/seeder.js",
-    "redoDB": "rm -rf ./src/db/migrations/; rm -rf ./.sqlite.db-journal; rm -rf ./.sqlite.db; yarn drizzle:generate; yarn drizzle:migrate; yarn drizzle:seed;"
+    "setupDB": "rm -rf ./src/db/migrations/; rm -rf ./.sqlite.db-journal; rm -rf ./.sqlite.db; yarn drizzle:generate; yarn drizzle:migrate; yarn drizzle:seed;"
   },
   "dependencies": {
     "@mantine/charts": "^7.12.2",

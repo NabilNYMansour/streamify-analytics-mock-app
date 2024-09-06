@@ -1,5 +1,3 @@
-"use client";
-
 import { ActiveUsers } from "@/lib/constants";
 import { LineChart } from "@mantine/charts";
 import { Card, Skeleton, Title } from "@mantine/core";

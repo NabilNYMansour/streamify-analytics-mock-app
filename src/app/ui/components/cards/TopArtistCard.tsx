@@ -1,5 +1,3 @@
-"use client";
-
 import { Card, Flex, Skeleton, Text, Title } from "@mantine/core";
 import dynamic from "next/dynamic";
 import Image from "next/image";
@@ -12,13 +10,15 @@ const TopArtistCardSkeleton = () => {
   </Card>
 }
 
-const TopArtistCard = ({ title, subtitle, artistName, imgPath }:
+const TopArtistCard = async ({ title, subtitle, artistName, imgPath }:
   { title: string, subtitle: string, artistName: string, imgPath: string }) => {
+  await new Promise((resolve) => setTimeout(resolve, 1250)); // simulate loading
+
   return (
     <Card withBorder p={25} miw={250}>
       <Title order={2} fw={500} ff="inherit">{title}</Title>
       <Text size="lg" c="dimmed">{subtitle}</Text>
-      <Flex direction="column" gap={10}>
+      <Flex direction="column" gap={10} mt="auto">
         <Text fz="h2" mt="xl">
           {artistName}
         </Text>

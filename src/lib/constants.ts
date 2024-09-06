@@ -1,5 +1,7 @@
 export const MAIN_URL = "https://Offloadrx.ca"
 
+export const flexGap = 15
+
 // Hardcoded values
 export const numberOfUsers = 10000
 export const activeUsers = 5000

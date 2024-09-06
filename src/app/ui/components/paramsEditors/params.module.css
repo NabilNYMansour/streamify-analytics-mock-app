@@ -1,0 +1,14 @@
+@keyframes shake {
+  0% {
+    transform: translate(2px, 0);
+  }
+  50% {
+    transform: translate(-2px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.count {
+  animation: shake 150ms 2 linear;
+}

@@ -1,5 +1,3 @@
-"use client";
-
 import { Card, NumberFormatter, Skeleton, Text, Title } from "@mantine/core";
 import dynamic from "next/dynamic";
 
@@ -13,6 +11,7 @@ const HomeCardSkeleton = () => {
 
 const HomeCard = async ({ title, subtitle, value, suffix }:
   { title: string, subtitle: string, value: number, suffix?: string }) => {
+  await new Promise((resolve) => setTimeout(resolve, 500 + Math.random() * 1000)); // simulate loading
 
   return (
     <Card withBorder p={25} miw={250}>

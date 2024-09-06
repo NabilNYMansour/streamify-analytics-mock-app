@@ -1,17 +1,23 @@
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .app {
   flex-grow: 1;
   display: flex;
+  min-width: 75%;
+  animation: slideUp 0.25s ease-in-out;
+  overflow-y: hidden;
 }
 
 .body * {
   transition: all 0.2s;
-}
-
-.notifications {
-  position: fixed;
-  top: 80px;
-  right: 0;
-  width: fit-content;
-  height: fit-content;
-  z-index: 5000;
 }
