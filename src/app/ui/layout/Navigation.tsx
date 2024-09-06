@@ -1,7 +1,7 @@
 "use client";
 
 import { Button, Flex, Tooltip } from '@mantine/core';
-import Logo from '../components/Logo';
+import Logo from '../components/other/Logo';
 import { FaUsers, FaHome, FaMoneyBill, FaMusic } from "react-icons/fa";
 import { usePathname } from 'next/navigation';
 import { IoExitOutline } from "react-icons/io5";

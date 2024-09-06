@@ -1,6 +1,6 @@
 {
-  "name": "OffloadRx",
-  "short_name": "OffloadRx",
+  "name": "Streamify Analytics",
+  "short_name": "Streamify Analytics",
   "start_url": "/",
   "background_color": "#ffffff",
   "theme_color": "#000000"

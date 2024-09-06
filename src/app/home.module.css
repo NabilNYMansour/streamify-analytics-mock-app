@@ -2,13 +2,12 @@
   height: 100vh;
   display: flex;
   flex-direction: row;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .app {
   flex-grow: 1;
   display: flex;
-  padding: 25px;
 }
 
 .body * {
