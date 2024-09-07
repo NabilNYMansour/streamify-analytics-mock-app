@@ -4,6 +4,7 @@ This is a mock app for [a music streaming service analytics](https://docs.google
 ### Local Deployement
 To deploy this app locally, run the following commands
 ```bash
+$ git clone https://github.com/NabilNYMansour/streamify-analytics-mock-app;
 $ yarn;
 $ yarn setupDB;
 $ yarn build;
