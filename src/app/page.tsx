@@ -3,6 +3,8 @@ import ActiveUsersChart from "./ui/components/charts/ActiveUsersChart";
 import HomeCard from "./ui/components/cards/HomeCard";
 import TopArtistCard from "./ui/components/cards/TopArtistCard";
 import { activeUsers, flexGap, numberOfUsers, revenue, totalStreams } from "@/lib/constants";
+import RevenuePieChart from "./ui/components/charts/RevenuePieChart";
+import TopSongsBarChart from "./ui/components/charts/TopSongsBarChart";
 
 // Using hardcoded values
 export default async function HomePage() {
@@ -29,6 +31,10 @@ export default async function HomePage() {
           <TopArtistCard
             title="Top Artist" subtitle="Last 30 days"
             artistName="Taylor Swift" imgPath="/swift.jpg" />
+        </Flex>
+        <Flex gap={flexGap} wrap="wrap" justify="center">
+          <RevenuePieChart />
+          <TopSongsBarChart />
         </Flex>
 
         <ActiveUsersChart />

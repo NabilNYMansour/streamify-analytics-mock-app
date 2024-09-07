@@ -1,7 +1,7 @@
 import { ActiveUsers } from "@/lib/constants";
 import { LineChart } from "@mantine/charts";
 import { Card, Skeleton, Title } from "@mantine/core";
-import classes from "./ActiveUsersChart.module.css";
+import classes from "./charts.module.css";
 import dynamic from "next/dynamic";
 
 const ActiveUsersChartSkeleton = () => {

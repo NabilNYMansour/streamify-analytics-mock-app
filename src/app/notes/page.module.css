@@ -1,0 +1,7 @@
+.letter a {
+  color: var(--mantine-color-main-4);;
+}
+
+.letter p {
+  margin: 10px;
+}

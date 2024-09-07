@@ -31,12 +31,14 @@ const PageLimitControls = ({ limit }: { limit: number }) => {
         size="xs"
         checkIconPosition="right"
         placeholder="Limit"
+        allowDeselect={false}
         onChange={(value) => handleLimitChange(Number(value))}
         defaultValue={limit.toString()}
         data={['10', '20', '30', '40', '50']}
         comboboxProps={{
           transitionProps: { transition: 'fade', duration: 200 },
         }}
+
       />
     </Flex>
   );

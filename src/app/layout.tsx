@@ -1,6 +1,6 @@
 import React from "react";
 import "@mantine/core/styles.css";
-// import '@mantine/charts/styles.css';
+import '@mantine/charts/styles.css';
 import { MantineProvider, ColorSchemeScript, Flex } from "@mantine/core";
 import classes from "./home.module.css";
 import cx from 'clsx';
@@ -15,41 +15,41 @@ const font = Nunito({
   subsets: ["latin"],
 })
 
-// const description = ""; // no need for this app
-// const title = "Streamify";
-// const author = "Nabil Mansour";
-// const keywords = "streamify, stream, music, video, audio, podcast, nabil, mansour";
-// const imageLink = ""; // no need for this app
+const description = ""; // no need for this app
+const title = "Streamify";
+const author = "Nabil Mansour";
+const keywords = "streamify, stream, music, video, audio, podcast, nabil, mansour";
+const imageLink = ""; // no need for this app
 
-// export const metadata: Metadata = {
-//   title: {
-//     default: title,
-//     template: "%s | " + title,
-//   },
-//   description: description,
-//   alternates: {
-//     canonical: `${MAIN_URL}`
-//   },
-//   keywords: keywords,
-//   openGraph: {
-//     title: title,
-//     description: description,
-//     url: `${MAIN_URL}`,
-//     type: "website",
-//     images: [{ url: imageLink, alt: title, }],
-//     locale: 'en_US',
-//   },
-//   twitter: {
-//     card: "summary_large_image",
-//     title: title,
-//     description: description,
-//     images: [imageLink],
-//   },
-//   authors: { name: author },
-//   creator: author,
-//   publisher: author,
-//   manifest: `${MAIN_URL}/manifest.json`,
-// };
+export const metadata: Metadata = {
+  title: {
+    default: title,
+    template: "%s | " + title,
+  },
+  description: description,
+  alternates: {
+    canonical: `${MAIN_URL}`
+  },
+  keywords: keywords,
+  openGraph: {
+    title: title,
+    description: description,
+    url: `${MAIN_URL}`,
+    type: "website",
+    images: [{ url: imageLink, alt: title, }],
+    locale: 'en_US',
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: title,
+    description: description,
+    images: [imageLink],
+  },
+  authors: { name: author },
+  creator: author,
+  publisher: author,
+  manifest: `${MAIN_URL}/manifest.json`,
+};
 
 export default function RootLayout({
   children,
